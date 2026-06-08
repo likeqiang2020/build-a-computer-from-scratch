@@ -1,8 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" font-family="'Segoe UI', Arial, sans-serif">
   <defs>
-    <marker id="dot" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <circle cx="4" cy="4" r="3" fill="#222"/>
-    </marker>
     <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
     </marker>
@@ -10,25 +7,19 @@
 
   <text x="350" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">非门（NOT Gate）电路</text>
 
-  <!-- 电路图区域 -->
   <rect x="40" y="50" width="380" height="280" rx="10" fill="#fafafa" stroke="#e0e0e0" stroke-width="1"/>
 
-  <!-- Vcc -->
   <text x="380" y="80" text-anchor="end" font-size="13" font-weight="bold" fill="#d32f2f">Vcc (+5V)</text>
 
-  <!-- 上拉电阻 R -->
   <rect x="300" y="85" width="50" height="30" rx="4" fill="#fff" stroke="#e0a800" stroke-width="2"/>
   <text x="325" y="104" text-anchor="middle" font-size="12" font-weight="bold" fill="#e0a800">R</text>
   <text x="325" y="82" text-anchor="middle" font-size="10" fill="#999">上拉电阻</text>
 
-  <!-- Vcc → R -->
   <line x1="380" y1="80" x2="380" y2="85" stroke="#222" stroke-width="1.5"/>
   <line x1="380" y1="85" x2="350" y2="85" stroke="#222" stroke-width="1.5"/>
   <line x1="300" y1="85" x2="325" y2="85" stroke="#222" stroke-width="1.5"/>
-  <!-- R → 集电极 -->
   <line x1="325" y1="115" x2="325" y2="155" stroke="#222" stroke-width="1.5"/>
 
-  <!-- 三极管 -->
   <circle cx="325" cy="195" r="3" fill="#222"/>
   <line x1="325" y1="155" x2="325" y2="192" stroke="#222" stroke-width="2"/>
   <line x1="325" y1="192" x2="280" y2="180" stroke="#222" stroke-width="2"/>
@@ -37,65 +28,48 @@
   <line x1="325" y1="212" x2="325" y2="250" stroke="#222" stroke-width="2"/>
   <polygon points="325,228 330,233 320,233" fill="#222"/>
 
-  <!-- 三极管标注 -->
   <text x="338" y="178" font-size="11" fill="#1565c0">C</text>
   <text x="250" y="193" font-size="11" fill="#2e7d32">B</text>
   <text x="338" y="265" font-size="11" fill="#c62828">E</text>
 
-  <!-- 基极电阻 Rb -->
   <rect x="100" y="178" width="50" height="30" rx="4" fill="#fff" stroke="#e0a800" stroke-width="2"/>
   <text x="125" y="197" text-anchor="middle" font-size="12" font-weight="bold" fill="#e0a800">Rb</text>
-
-  <!-- 基极导线 -->
   <line x1="100" y1="193" x2="60" y2="193" stroke="#222" stroke-width="1.5"/>
   <line x1="150" y1="193" x2="280" y2="190" stroke="#222" stroke-width="1.5"/>
 
-  <!-- 输入 A -->
   <circle cx="35" cy="193" r="15" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
   <text x="35" y="198" text-anchor="middle" font-size="16" font-weight="bold" fill="#1976d2">A</text>
   <text x="92" y="210" text-anchor="middle" font-size="11" fill="#999">限流</text>
 
-  <!-- 接地 -->
   <line x1="325" y1="250" x2="325" y2="280" stroke="#222" stroke-width="1.5"/>
   <line x1="295" y1="280" x2="355" y2="280" stroke="#222" stroke-width="1.5"/>
   <text x="365" y="283" font-size="11" fill="#555">GND（0V）</text>
 
-  <!-- 输出 Y -->
   <circle cx="200" cy="85" r="15" fill="#fce4ec" stroke="#c62828" stroke-width="2"/>
   <text x="200" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="#c62828">Y</text>
   <line x1="325" y1="155" x2="200" y2="85" stroke="#222" stroke-width="1.5" stroke-dasharray="5,3"/>
 
-  <!-- ===== 右侧：真值表 ===== -->
   <rect x="440" y="60" width="230" height="260" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
-
   <text x="555" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">真值表</text>
 
-  <!-- 表头 -->
   <rect x="460" y="105" width="90" height="35" rx="4" fill="#e3f2fd" stroke="#90caf9" stroke-width="1.5"/>
   <text x="505" y="128" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565c0">A（输入）</text>
-
   <rect x="560" y="105" width="90" height="35" rx="4" fill="#fce4ec" stroke="#ef9a9a" stroke-width="1.5"/>
   <text x="605" y="128" text-anchor="middle" font-size="15" font-weight="bold" fill="#c62828">Y（输出）</text>
 
-  <!-- 行 1：A=0 -->
   <rect x="460" y="150" width="90" height="40" rx="2" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
   <text x="505" y="176" text-anchor="middle" font-size="18" font-weight="bold" fill="#1976d2">0</text>
   <rect x="560" y="150" width="90" height="40" rx="2" fill="#fff3e0" stroke="#ffe0b2" stroke-width="1"/>
   <text x="605" y="176" text-anchor="middle" font-size="18" font-weight="bold" fill="#e65100">1</text>
 
-  <!-- 行 2：A=1 -->
   <rect x="460" y="200" width="90" height="40" rx="2" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
   <text x="505" y="226" text-anchor="middle" font-size="18" font-weight="bold" fill="#1976d2">1</text>
   <rect x="560" y="200" width="90" height="40" rx="2" fill="#fce4ec" stroke="#ef9a9a" stroke-width="1"/>
   <text x="605" y="226" text-anchor="middle" font-size="18" font-weight="bold" fill="#c62828">0</text>
 
-  <!-- 表达式 -->
   <rect x="460" y="260" width="190" height="40" rx="6" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1.5"/>
   <text x="555" y="286" text-anchor="middle" font-size="16" font-weight="bold" fill="#2e7d32">Y = Ā</text>
 
-  <!-- 工作原理解释 -->
   <rect x="40" y="340" width="630" height="30" rx="6" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1"/>
-  <text x="355" y="360" text-anchor="middle" font-size="13" fill="#6a1b9a">
-    💡 A=1 → 三极管导通 → Y=0 &nbsp;&nbsp;|&nbsp;&nbsp; A=0 → 三极管截止 → Y=1（被 R 拉到 Vcc）
-  </text>
+  <text x="355" y="360" text-anchor="middle" font-size="13" fill="#6a1b9a">A=1 → 三极管导通 → Y=0  |  A=0 → 三极管截止 → Y=1（被 R 拉到 Vcc）</text>
 </svg>

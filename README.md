@@ -93,10 +93,10 @@ build-a-computer-from-scratch/
 ├── README.md                          ← 序言 + 目录（本文件）
 ├── images/                            ← 📷 集中存放所有电路图
 │   ├── 01-pn-junction.svg             ← 第 1 章：PN 结与二极管
-│   ├── 02-transistor-switch.svg       ← 第 1 章：三极管开关电路
-│   ├── 03-not-gate.svg                ← 第 1 章：非门电路
-│   ├── 04-nand-gate.svg               ← 第 1 章：与非门电路
-│   ├── 05-nor-gate.svg                ← 第 1 章：或非门电路
+│   ├── 01-transistor-switch.svg       ← 第 1 章：三极管开关电路
+│   ├── 01-not-gate.svg                ← 第 1 章：非门电路
+│   ├── 01-nand-gate.svg               ← 第 1 章：与非门电路
+│   ├── 01-nor-gate.svg                ← 第 1 章：或非门电路
 │   ├── 02-1-half-adder.png            ← 第 2 章：半加器
 │   ├── 02-2-1-full-adder.png          ← 第 2 章：全加器
 │   └── 02-2-2-full-adder-expanded.png ← 第 2 章：全加器展开
