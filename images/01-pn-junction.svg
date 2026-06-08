@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2979ff"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">PN 结与二极管</text>
+
+  <!-- ====== 上部分：PN 结结构 ====== -->
+
+  <!-- 背景 -->
+  <rect x="50" y="55" width="700" height="120" rx="8" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+
+  <!-- P 型区域 -->
+  <rect x="80" y="65" width="280" height="100" rx="4" fill="#ffcdd2" stroke="#e57373" stroke-width="2"/>
+  <text x="220" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#c62828">P 型半导体</text>
+  <text x="220" y="125" text-anchor="middle" font-size="13" fill="#c62828">掺入三价元素（硼）</text>
+  <text x="220" y="145" text-anchor="middle" font-size="13" fill="#c62828">多数载流子：空穴（正电荷）</text>
+
+  <!-- N 型区域 -->
+  <rect x="440" y="65" width="280" height="100" rx="4" fill="#bbdefb" stroke="#42a5f5" stroke-width="2"/>
+  <text x="580" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#1565c0">N 型半导体</text>
+  <text x="580" y="125" text-anchor="middle" font-size="13" fill="#1565c0">掺入五价元素（磷）</text>
+  <text x="580" y="145" text-anchor="middle" font-size="13" fill="#1565c0">多数载流子：自由电子（负电荷）</text>
+
+  <!-- 耗尽层 -->
+  <rect x="365" y="80" width="70" height="70" rx="4" fill="#fff9c4" stroke="#fdd835" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="400" y="120" text-anchor="middle" font-size="11" font-weight="bold" fill="#f57f17">耗尽层</text>
+
+  <!-- ====== 下部分：二极管符号和说明 ====== -->
+
+  <!-- 二极管原理说明 -->
+  <rect x="50" y="190" width="340" height="130" rx="8" fill="#f1f8e9" stroke="#aed581" stroke-width="1.5"/>
+
+  <!-- 正向偏置 -->
+  <text x="220" y="215" text-anchor="middle" font-size="15" font-weight="bold" fill="#2e7d32">✅ 正向偏置 → 导通</text>
+  <text x="65" y="238" font-size="13" fill="#333">P 接正极，N 接负极</text>
+  <text x="65" y="258" font-size="13" fill="#333">外电场削弱内建电场</text>
+  <text x="65" y="278" font-size="13" fill="#333">多数载流子向对方扩散</text>
+  <text x="65" y="298" font-size="13" fill="#333">耗尽层变窄 → 电流通过</text>
+
+  <!-- 箭头 -->
+  <line x1="390" y1="255" x2="430" y2="255" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 反向偏置 -->
+  <rect x="440" y="190" width="310" height="130" rx="8" fill="#fce4ec" stroke="#ef9a9a" stroke-width="1.5"/>
+  <text x="595" y="215" text-anchor="middle" font-size="15" font-weight="bold" fill="#c62828">❌ 反向偏置 → 截止</text>
+  <text x="455" y="238" font-size="13" fill="#333">P 接负极，N 接正极</text>
+  <text x="455" y="258" font-size="13" fill="#333">外电场增强内建电场</text>
+  <text x="455" y="278" font-size="13" fill="#333">多数载流子被拉离 PN 结</text>
+  <text x="455" y="298" font-size="13" fill="#333">耗尽层变宽 → 无电流</text>
+
+  <!-- ====== 底部：二极管符号 ====== -->
+  <text x="400" y="340" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">二极管符号</text>
+
+  <!-- 二极管符号：三角形 + 竖线 -->
+  <polygon points="340,370 340,430 400,400" fill="none" stroke="#222" stroke-width="2.5"/>
+  <line x1="400" y1="365" x2="400" y2="435" stroke="#222" stroke-width="2.5"/>
+  <line x1="415" y1="365" x2="415" y2="435" stroke="#222" stroke-width="2.5"/>
+
+  <!-- 引脚 -->
+  <line x1="340" y1="400" x2="300" y2="400" stroke="#222" stroke-width="2"/>
+  <line x1="415" y1="400" x2="455" y2="400" stroke="#222" stroke-width="2"/>
+
+  <!-- 阳极/阴极标注 -->
+  <text x="310" y="420" text-anchor="middle" font-size="14" font-weight="bold" fill="#c62828">阳极（P）</text>
+  <text x="450" y="420" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">阴极（N）</text>
+
+  <!-- 电流方向箭头 -->
+  <line x1="295" y1="395" x2="275" y2="395" stroke="#2979ff" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="265" y="388" text-anchor="end" font-size="12" fill="#2979ff">电流方向</text>
+</svg>

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 520" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1565c0"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2e7d32"/>
+    </marker>
+  </defs>
+
+  <text x="415" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">NPN 三极管（BJT）结构原理</text>
+
+  <!-- ============================================================ -->
+  <!-- 左半部分：NPN 内部结构                                        -->
+  <!-- ============================================================ -->
+  <rect x="40" y="50" width="420" height="370" rx="10" fill="#fafafa" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="250" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="#444">NPN 三层半导体结构</text>
+
+  <!-- ===== 集电极 N 区 (顶部) ===== -->
+  <rect x="130" y="85" width="240" height="70" rx="6" fill="#bbdefb" stroke="#42a5f5" stroke-width="2.5"/>
+  <text x="250" y="115" text-anchor="middle" font-size="16" font-weight="bold" fill="#1565c0">N 型集电区</text>
+  <text x="250" y="138" text-anchor="middle" font-size="12" fill="#1565c0">Collector — 收集载流子</text>
+
+  <!-- ===== 集电结耗尽层 ===== -->
+  <rect x="130" y="160" width="240" height="14" rx="3" fill="#fff9c4" stroke="#fdd835" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="120" y="170" text-anchor="end" font-size="10" fill="#f57f17">集电结耗尽层</text>
+
+  <!-- ===== 基区 P 型 (中间, 很薄) ===== -->
+  <rect x="130" y="178" width="240" height="40" rx="6" fill="#ffcdd2" stroke="#e57373" stroke-width="2.5"/>
+  <text x="250" y="198" text-anchor="middle" font-size="14" font-weight="bold" fill="#c62828">P 型基区</text>
+  <text x="250" y="214" text-anchor="middle" font-size="11" fill="#c62828">Base — 很薄，控制核心</text>
+
+  <!-- ===== 发射结耗尽层 ===== -->
+  <rect x="130" y="222" width="240" height="14" rx="3" fill="#fff9c4" stroke="#fdd835" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="120" y="232" text-anchor="end" font-size="10" fill="#f57f17">发射结耗尽层</text>
+
+  <!-- ===== 发射区 N 型 (底部) ===== -->
+  <rect x="130" y="240" width="240" height="70" rx="6" fill="#bbdefb" stroke="#42a5f5" stroke-width="2.5"/>
+  <text x="250" y="270" text-anchor="middle" font-size="16" font-weight="bold" fill="#1565c0">N 型发射区</text>
+  <text x="250" y="293" text-anchor="middle" font-size="12" fill="#1565c0">Emitter — 发射载流子</text>
+
+  <!-- ===== 载流子标注 ===== -->
+  <text x="160" y="268" font-size="14" fill="#0d47a1">⊖</text>
+  <text x="180" y="268" font-size="14" fill="#0d47a1">⊖</text>
+  <text x="200" y="268" font-size="14" fill="#0d47a1">⊖</text>
+  <text x="160" y="196" font-size="14" fill="#b71c1c">⊕</text>
+  <text x="180" y="196" font-size="14" fill="#b71c1c">⊕</text>
+  <text x="310" y="113" font-size="14" fill="#0d47a1">⊖</text>
+  <text x="330" y="113" font-size="14" fill="#0d47a1">⊖</text>
+
+  <!-- ===== 电子流动路径 (导通状态) ===== -->
+  <!-- 发射极 → 基极 → 集电极 的电子流 -->
+  <path d="M 250,320 Q 250,355 250,365" stroke="#1565c0" stroke-width="2.5" fill="none" stroke-dasharray="6,3" marker-end="url(#arrow-blue)"/>
+  <path d="M 250,355 Q 300,355 340,240" stroke="#1565c0" stroke-width="2.5" fill="none" stroke-dasharray="6,3"/>
+  <path d="M 340,240 Q 355,200 340,120" stroke="#1565c0" stroke-width="2.5" fill="none" stroke-dasharray="6,3" marker-end="url(#arrow-blue)"/>
+
+  <!-- 基极小电流路径 -->
+  <path d="M 250,355 Q 180,355 160,240" stroke="#2e7d32" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#arrow-green)"/>
+
+  <!-- 电流路径标注 -->
+  <text x="310" y="360" font-size="11" fill="#1565c0">大电流 I<sub>C</sub>（电子流）</text>
+  <text x="150" y="380" font-size="11" fill="#2e7d32">小电流 I<sub>B</sub></text>
+
+  <!-- ===== 偏置电压标注 ===== -->
+  <text x="395" y="100" font-size="13" font-weight="bold" fill="#d32f2f">+Vcc</text>
+  <line x1="370" y1="100" x2="385" y2="100" stroke="#d32f2f" stroke-width="1.5"/>
+  <line x1="385" y1="100" x2="385" y2="120" stroke="#d32f2f" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <text x="395" y="293" font-size="13" font-weight="bold" fill="#555">GND</text>
+  <line x1="370" y1="293" x2="385" y2="293" stroke="#555" stroke-width="1.5"/>
+  <line x1="385" y1="275" x2="385" y2="293" stroke="#555" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <text x="100" y="196" text-anchor="end" font-size="13" font-weight="bold" fill="#1976d2">Vin</text>
+  <line x1="105" y1="196" x2="125" y2="196" stroke="#1976d2" stroke-width="1.5"/>
+
+  <!-- ============================================================ -->
+  <!-- 右半部分：导通与截止说明                                      -->
+  <!-- ============================================================ -->
+  <rect x="480" y="50" width="310" height="370" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="635" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="#444">开关工作原理</text>
+
+  <!-- 导通状态 -->
+  <rect x="500" y="90" width="270" height="145" rx="8" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1.5"/>
+  <text x="635" y="115" text-anchor="middle" font-size="15" font-weight="bold" fill="#2e7d32">✅ 饱和导通（开关闭合）</text>
+  <text x="515" y="140" font-size="13" fill="#333">Vin 为高电平（1）</text>
+  <text x="515" y="160" font-size="13" fill="#333">发射结正偏，电子从 E → B</text>
+  <text x="515" y="180" font-size="13" fill="#333">集电结反偏，电子被拉到 C</text>
+  <text x="515" y="200" font-size="13" fill="#333">大量电子从 E 流向 C → I<sub>C</sub></text>
+  <text x="515" y="225" font-size="13" font-weight="bold" fill="#c62828">Vout = 0（低电平）</text>
+
+  <!-- 分隔 -->
+  <line x1="510" y1="250" x2="760" y2="250" stroke="#ddd" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- 截止状态 -->
+  <rect x="500" y="265" width="270" height="140" rx="8" fill="#fce4ec" stroke="#ef9a9a" stroke-width="1.5"/>
+  <text x="635" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#c62828">❌ 截止（开关断开）</text>
+  <text x="515" y="315" font-size="13" fill="#333">Vin 为低电平（0）</text>
+  <text x="515" y="335" font-size="13" fill="#333">发射结反偏，电子无法发射</text>
+  <text x="515" y="355" font-size="13" fill="#333">基区无电流，C-E 断开</text>
+  <text x="515" y="375" font-size="13" fill="#333">输出被外接电阻拉到 Vcc</text>
+  <text x="515" y="395" font-size="13" font-weight="bold" fill="#1565c0">Vout = 1（高电平）</text>
+
+  <!-- ============================================================ -->
+  <!-- 底部：三极管符号                                              -->
+  <!-- ============================================================ -->
+  <rect x="140" y="435" width="220" height="75" rx="8" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="250" y="455" text-anchor="middle" font-size="13" font-weight="bold" fill="#6a1b9a">NPN 三极管电路符号</text>
+
+  <g transform="translate(270, 465)">
+    <circle cx="0" cy="20" r="3" fill="#222"/>
+    <line x1="0" y1="0" x2="0" y2="17" stroke="#222" stroke-width="2"/>
+    <line x1="0" y1="17" x2="-20" y2="8" stroke="#222" stroke-width="2"/>
+    <line x1="-20" y1="8" x2="-20" y2="18" stroke="#222" stroke-width="2"/>
+    <line x1="-20" y1="18" x2="0" y2="25" stroke="#222" stroke-width="2"/>
+    <line x1="0" y1="25" x2="0" y2="40" stroke="#222" stroke-width="2"/>
+    <polygon points="0,32 4,36 -4,36" fill="#222"/>
+    <text x="-30" y="15" font-size="11" fill="#c62828">B（基极）</text>
+    <text x="8" y="8" font-size="11" fill="#1565c0">C（集电极）</text>
+    <text x="8" y="45" font-size="11" fill="#1565c0">E（发射极）</text>
+  </g>
+
+  <!-- 底部总结 -->
+  <rect x="400" y="460" width="390" height="50" rx="8" fill="#fff3e0" stroke="#ffb74d" stroke-width="1.5"/>
+  <text x="595" y="481" text-anchor="middle" font-size="13" fill="#e65100">
+    💡 核心：小电流 I<sub>B</sub> 控制大电流 I<sub>C</sub>  —  I<sub>C</sub> = β × I<sub>B</sub>
+  </text>
+  <text x="595" y="499" text-anchor="middle" font-size="13" fill="#e65100">
+    β 为放大倍数，通常 100~1000
+  </text>
+</svg>
