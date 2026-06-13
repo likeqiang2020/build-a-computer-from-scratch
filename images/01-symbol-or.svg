@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 60" width="90" height="60">
+  <!-- OR gate: curved body -->
+  <path d="M 10,10 Q 40,10 70,30 Q 40,50 10,50" fill="#fff" stroke="#222" stroke-width="2"/>
+  <path d="M 10,10 Q 10,30 10,50" fill="none" stroke="#222" stroke-width="2"/>
+  <!-- inputs -->
+  <line x1="0" y1="20" x2="10" y2="20" stroke="#222" stroke-width="2"/>
+  <line x1="0" y1="40" x2="10" y2="40" stroke="#222" stroke-width="2"/>
+  <!-- output -->
+  <line x1="70" y1="30" x2="90" y2="30" stroke="#222" stroke-width="2"/>
+</svg>
