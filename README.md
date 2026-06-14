@@ -47,8 +47,8 @@ build-a-computer-from-scratch/
     <td align="center">✅</td>
   </tr>
   <tr>
-    <td><a href="02-adder-principle/3-构建三位加法器.md">3-构建三位加法器.md</a></td>
-    <td align="center">⏳</td>
+    <td><a href="02-adder-principle/3-three-bit-adder.md">3-three-bit-adder.md</a></td>
+    <td align="center">✅</td>
   </tr>
   <tr>
     <td><b>💾 03-memory</b><br>存储单元</td>
@@ -65,6 +65,7 @@ build-a-computer-from-scratch/
 - 参考书籍：《编码：隐匿在计算机软硬件背后的语言》—— 非常有必要读一下
 - 《穿越计算机的迷雾》—— 看了一点，也很好。作者李忠老师还有一本《X86 汇编语言：从实模式到保护模式》，如果有时间的话也很想复刻一下
 - 模拟器：Logisim（文章的 PNG 电路结构图都是用这个画的）
+- 74LS系列芯片手册：https://www.futurlec.com/IC74LS00Series.shtml
 
 ---
 
