@@ -10,15 +10,15 @@
 
 拿一个 74LS32 或门，把输出（3 号）接到输入（2 号），1 号引脚接按钮（默认低电平，按下变高）：
 
-![反馈或门 Logisim 电路图](../images/03-feedback-or-gate-logisim.png)
+![反馈或门 Logisim 电路图](../images/03-memory/03-feedback-or-gate-logisim.png)
 
 **效果演示：**
 
 LED 默认不亮（1 号低电平，输出 Q=0）：
-![反馈或门 默认关](../images/03-feedback-or-gate-off.png)
+![反馈或门 默认关](../images/03-memory/03-feedback-or-gate-off.png)
 
 按下按钮再松手，LED **还亮着**：
-![反馈或门 按后保持亮](../images/03-feedback-or-gate-on.png)
+![反馈或门 按后保持亮](../images/03-memory/03-feedback-or-gate-on.png)
 
 **原理**：按下时 1 号高电平 → 输出 Q=1 → Q 反馈到 2 号 → 即使松手（1 号变回 0），2 号仍然为 1 → 输出保持 1。
 
@@ -50,7 +50,7 @@ LED 默认不亮（1 号低电平，输出 Q=0）：
 - NOR1 输入：R 和 Q̅，输出 Q
 - NOR2 输入：S 和 Q，输出 Q̅
 
-![SR 锁存器 Logisim 图](../images/03-sr-latch-logisim.png)
+![SR 锁存器 Logisim 图](../images/03-memory/03-sr-latch-logisim.png)
 
 ### 锁存原理
 
@@ -123,27 +123,27 @@ LED 默认不亮（1 号低电平，输出 Q=0）：
 
 **1. 上电瞬间**：两个输入都是 0 → 输出都是 1 → 互相反馈产生竞争，随机一个 LED 亮
 
-![上电初始](../images/03-sr-latch-power-on.png)
+![上电初始](../images/03-memory/03-sr-latch-power-on.png)
 
 **2. 左侧开关置 1（Set）** → 左侧灭、右侧亮（写入 1）
 
-![Set 按下](../images/03-sr-latch-set-1-on.png)
+![Set 按下](../images/03-memory/03-sr-latch-set-1-on.png)
 
 **3. 左侧开关回到 0** → S=0、R=0，**锁存生效**，右侧仍亮（记住了一直是置位状态）
 
-![Set 松手后保持](../images/03-sr-latch-set-1-off.png)
+![Set 松手后保持](../images/03-memory/03-sr-latch-set-1-off.png)
 
 **4. 右侧开关置 1（Reset）** → 右侧灭、左侧亮（写入 0）
 
-![Reset 按下](../images/03-sr-latch-reset-1-on.png)
+![Reset 按下](../images/03-memory/03-sr-latch-reset-1-on.png)
 
 **5. 右侧开关回到 0** → S=0、R=0，**再次锁存**，左侧仍亮（记住了一直是复位状态）
 
-![Reset 松手后保持](../images/03-sr-latch-reset-1-off.png)
+![Reset 松手后保持](../images/03-memory/03-sr-latch-reset-1-off.png)
 
 **6. 两侧开关都置 1（禁止态）** → 两个 LED 都灭
 
-![禁止态](../images/03-sr-latch-both-1-off.png)
+![禁止态](../images/03-memory/03-sr-latch-both-1-off.png)
 
 > 💡 LED 记得串 **220Ω 电阻**再接地，不然红色 LED 压降低，可能拉低输出电平导致反馈失效。
 

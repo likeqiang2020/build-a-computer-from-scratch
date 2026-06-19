@@ -41,7 +41,7 @@
 - 当 A 和 B 都是 1 时，$1 + 1 = 2$，二进制表示为 `10`，所以 **和 S = 0**，**进位 Cout = 1**。
 - 半加器只能处理两个输入，**不能处理来自低位的进位**。要处理进位输入，需要使用 **全加器（Full Adder）**。
 
-![Half Adder](../images/02-1-half-adder.png)
+![Half Adder](../images/02-adder-principle/02-1-half-adder.png)
 
 ## 使用 74LS 系列芯片搭建半加器
 
@@ -55,7 +55,7 @@
 用一块 74LS86（提供 XOR）和一块 74LS08（提供 AND），就能搭出完整的半加器电路。
 
 半加器计算 **1+0**（Cout=1, S=0）：
-![半加器 1+0](../images/02-1-half-adder-input-10.png)
+![半加器 1+0](../images/02-adder-principle/02-1-half-adder-input-10.png)
 
 半加器计算 **1+1**（Cout=0, S=1）：
-![半加器 1+1](../images/02-1-half-adder-input-11.png)
+![半加器 1+1](../images/02-adder-principle/02-1-half-adder-input-11.png)

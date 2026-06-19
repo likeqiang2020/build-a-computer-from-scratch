@@ -96,7 +96,7 @@
 
 这些固定正负离子组成的区域就是 **耗尽层（Depletion Layer，也叫空间电荷区）**——"耗尽"指的是这一带的可移动载流子（空穴和自由电子）都被耗光了，只剩下固定离子。
 
-![耗尽层结构](../images/01-depletion-layer.svg)
+![耗尽层结构](../images/01-logic-gates/01-depletion-layer.svg)
 
 **耗尽层的要点**：
 - 耗尽层内存在**内建电场**，方向从 **N→P**（从正离子指向负离子）
@@ -115,7 +115,7 @@
 
 ### 二极管符号
 
-![PN 结二极管](../images/01-pn-junction.svg)
+![PN 结二极管](../images/01-logic-gates/01-pn-junction.svg)
 
 二极管其实就是 **PN 结 + 两个引脚**，记住电流只能从 **P（阳极）→ N（阴极）** 单向走，不能反过来。
 
@@ -151,7 +151,7 @@
 
 三极管内部有两个 PN 结：**发射结**（E-B 之间）和**集电结**（C-B 之间）。
 
-![三极管开关电路](../images/01-transistor-switch.svg)
+![三极管开关电路](../images/01-logic-gates/01-transistor-switch.svg)
 
 | 基极输入 | 发射结 | 集电结 | 三极管状态 | C-E 之间 |
 |:--------:|:------:|:------:|:----------:|:--------:|
@@ -170,8 +170,8 @@
 
 **结构**：1 个三极管 + 1 个上拉电阻
 
-![NOT 门电路](../images/01-not-gate-input-0.JPG)
-![NOT 门电路](../images/01-not-gate-input-1.JPG)
+![NOT 门电路](../images/01-logic-gates/01-not-gate-input-0.JPG)
+![NOT 门电路](../images/01-logic-gates/01-not-gate-input-1.JPG)
 
 | A（输入） | 三极管 | Y（输出） |
 |:---------:|:------:|:---------:|
@@ -188,7 +188,7 @@
 
 **结构**：2 个三极管**串联** + 1 个上拉电阻
 
-![NAND 门电路](../images/01-nand-gate.svg)
+![NAND 门电路](../images/01-logic-gates/01-nand-gate.svg)
 
 | A | B | 三极管状态 | Y（输出） |
 |:-:|:-:|:----------:|:---------:|
@@ -207,7 +207,7 @@
 
 **结构**：2 个三极管**并联** + 1 个上拉电阻
 
-![NOR 门电路](../images/01-nor-gate.svg)
+![NOR 门电路](../images/01-logic-gates/01-nor-gate.svg)
 
 | A | B | 三极管状态 | Y（输出） |
 |:-:|:-:|:----------:|:---------:|
