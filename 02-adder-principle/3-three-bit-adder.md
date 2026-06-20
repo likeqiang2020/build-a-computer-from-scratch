@@ -24,7 +24,7 @@
 = C3 C2 C1 C0 = 1  1  0  1
 ```
 
-![三位加法器 6+7](../images/02-adder-principle/02-3-adder-6+7.png)
+![三位加法器 6+7](../images/02-adder-principle/02-3-adder-6+7.jpg)
 
 ### 3 + 5 = 8（二进制 011 + 101 = 1000）
 
@@ -35,7 +35,7 @@
 = C3 C2 C1 C0 = 1  0  0  0
 ```
 
-![三位加法器 3+5](../images/02-adder-principle/02-3-adder-3+5.png)
+![三位加法器 3+5](../images/02-adder-principle/02-3-adder-3+5.jpg)
 
 
 ---

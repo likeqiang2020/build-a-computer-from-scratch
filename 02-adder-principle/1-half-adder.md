@@ -55,7 +55,7 @@
 用一块 74LS86（提供 XOR）和一块 74LS08（提供 AND），就能搭出完整的半加器电路。
 
 半加器计算 **1+0**（Cout=1, S=0）：
-![半加器 1+0](../images/02-adder-principle/02-1-half-adder-input-10.png)
+![半加器 1+0](../images/02-adder-principle/02-1-half-adder-input-10.jpg)
 
 半加器计算 **1+1**（Cout=0, S=1）：
-![半加器 1+1](../images/02-adder-principle/02-1-half-adder-input-11.png)
+![半加器 1+1](../images/02-adder-principle/02-1-half-adder-input-11.jpg)

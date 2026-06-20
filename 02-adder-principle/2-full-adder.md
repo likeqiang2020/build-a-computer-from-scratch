@@ -67,6 +67,6 @@
 
 | A | B | Cin | Cout | S | 实物图 |
 |:-:|:-:|:---:|:----:|:-:|:------|
-| 1 | 0 |  0  |  0   | 1 | ![全加器 1+0+0](../images/02-adder-principle/02-2-full-adder-input-100.png) |
-| 1 | 1 |  0  |  1   | 0 | ![全加器 1+1+0](../images/02-adder-principle/02-2-full-adder-input-110.png) |
-| 1 | 1 |  1  |  1   | 1 | ![全加器 1+1+1](../images/02-adder-principle/02-2-full-adder-input-111.png) |
+| 1 | 0 |  0  |  0   | 1 | ![全加器 1+0+0](../images/02-adder-principle/02-2-full-adder-input-100.jpg) |
+| 1 | 1 |  0  |  1   | 0 | ![全加器 1+1+0](../images/02-adder-principle/02-2-full-adder-input-110.jpg) |
+| 1 | 1 |  1  |  1   | 1 | ![全加器 1+1+1](../images/02-adder-principle/02-2-full-adder-input-111.jpg) |
