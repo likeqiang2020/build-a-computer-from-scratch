@@ -172,8 +172,8 @@
 
 **结构**：1 个三极管 + 1 个上拉电阻
 
-![NOT 门电路](../images/01-logic-gates/01-not-gate-input-0.JPG)
-![NOT 门电路](../images/01-logic-gates/01-not-gate-input-1.JPG)
+<img width="600" src="../images/01-logic-gates/01-not-gate-input-0.JPG" alt="NOT 门电路">
+<img width="600" src="../images/01-logic-gates/01-not-gate-input-1.JPG" alt="NOT 门电路">
 
 | A（输入） | 三极管 | Y（输出） |
 |:---------:|:------:|:---------:|

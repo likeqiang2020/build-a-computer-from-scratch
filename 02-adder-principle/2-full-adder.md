@@ -27,8 +27,8 @@
 
 ### 电路结构
 
-![Full Adder](../images/02-adder-principle/02-2-1-full-adder.png)
-![Full Adder Expanded](../images/02-adder-principle/02-2-2-full-adder-expanded.png)
+<img width="600" src="../images/02-adder-principle/02-2-1-full-adder.png" alt="Full Adder">
+<img width="600" src="../images/02-adder-principle/02-2-2-full-adder-expanded.png" alt="Full Adder Expanded">
 
 全加器可由 **两个半加器 + 一个或门（OR）** 组成：
 
@@ -67,6 +67,6 @@
 
 | A | B | Cin | Cout | S | 实物图 |
 |:-:|:-:|:---:|:----:|:-:|:------|
-| 1 | 0 |  0  |  0   | 1 | ![全加器 1+0+0](../images/02-adder-principle/02-2-full-adder-input-100.jpg) |
-| 1 | 1 |  0  |  1   | 0 | ![全加器 1+1+0](../images/02-adder-principle/02-2-full-adder-input-110.jpg) |
-| 1 | 1 |  1  |  1   | 1 | ![全加器 1+1+1](../images/02-adder-principle/02-2-full-adder-input-111.jpg) |
+| 1 | 0 |  0  |  0   | 1 | <img width="600" src="../images/02-adder-principle/02-2-full-adder-input-100.jpg" alt="全加器 1+0+0"> |
+| 1 | 1 |  0  |  1   | 0 | <img width="600" src="../images/02-adder-principle/02-2-full-adder-input-110.jpg" alt="全加器 1+1+0"> |
+| 1 | 1 |  1  |  1   | 1 | <img width="600" src="../images/02-adder-principle/02-2-full-adder-input-111.jpg" alt="全加器 1+1+1"> |

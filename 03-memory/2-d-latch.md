@@ -8,7 +8,7 @@ SR 锁存器能记住哪个输入端最后是 1，但有时我们需要更精确
 
 在 SR 锁存器的 S 和 R 前面各加一个**与门**，用使能信号 E 控制：
 
-![带使能的 SR 锁存器](../images/03-memory/03-d-latch-gated-sr.png)
+<img width="600" src="../images/03-memory/03-d-latch-gated-sr.png" alt="带使能的 SR 锁存器">
 
 - E = 0 → 无论 S/R 怎么变，与门输出都是 0 → 锁存器保持不动
 - E = 1 → 与门放行，S 和 R 正常起作用
@@ -24,7 +24,7 @@ SR 锁存器能记住哪个输入端最后是 1，但有时我们需要更精确
 
 所以真正有用的就是 Set 和 Reset，而且它俩不能同时为 1。那好办：**把数据端 D 作为 Set，再把 D 取反作为 Reset**，这样 S 和 R 永远互补，不会出现禁止态：
 
-![D 锁存器 Logisim 图](../images/03-memory/03-d-latch-logisim.png)
+<img width="600" src="../images/03-memory/03-d-latch-logisim.png" alt="D 锁存器 Logisim 图">
 
 ## 真值表
 
@@ -56,7 +56,7 @@ SR 锁存器能记住哪个输入端最后是 1，但有时我们需要更精确
 
 **上电**：Clk=0, D=0 → 和 SR 锁存器一样，两个 LED 随机亮一个（竞争状态）
 
-![上电初始](../images/03-memory/03-d-latch-power-on.jpg)
+<img width="600" src="../images/03-memory/03-d-latch-power-on.jpg" alt="上电初始">
 
 > 我们只关心 Q，后面拆掉 Q̅ 的 LED。
 
@@ -64,10 +64,10 @@ SR 锁存器能记住哪个输入端最后是 1，但有时我们需要更精确
 
 **Clk=1, D=0** → 存入 0，LED 灭
 
-![Clk=1 D=0](../images/03-memory/03-d-latch-clk1-d0.jpg)
+<img width="600" src="../images/03-memory/03-d-latch-clk1-d0.jpg" alt="Clk=1 D=0">
 
 **Clk=1, D=1** → 存入 1，LED 亮
 
-![Clk=1 D=1](../images/03-memory/03-d-latch-clk1-d1.jpg)
+<img width="600" src="../images/03-memory/03-d-latch-clk1-d1.jpg" alt="Clk=1 D=1">
 
 **关键行为**：把 Clk 回到 0，LED 保持当前状态不变，再拨 D 也不会影响。这就是"**锁存**"——在 Clk=1 的那一瞬间把 D 的值抓进来，然后 Clk=0 锁住。
