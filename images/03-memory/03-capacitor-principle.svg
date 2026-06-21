@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="600" style="max-width:90%" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="820" height="540" fill="#fafafa" rx="8" />
+
+  <text x="410" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">电容原理</text>
+
+  <!-- ============ 上半部分：内部结构 ============ -->
+  <text x="410" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="#555">内部结构</text>
+
+  <rect x="200" y="88" width="420" height="18" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" rx="2" />
+  <text x="205" y="101" font-size="12" fill="#1565c0">金属极板</text>
+
+  <rect x="200" y="160" width="420" height="18" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" rx="2" />
+  <text x="205" y="173" font-size="12" fill="#1565c0">金属极板</text>
+
+  <rect x="200" y="106" width="420" height="54" fill="#fff8e1" stroke="#f57f17" stroke-width="1.5" stroke-dasharray="6,3" rx="2" />
+  <text x="410" y="136" text-anchor="middle" font-size="13" fill="#e65100">绝缘介质（陶瓷/电解液/空气）</text>
+
+  <text x="410" y="200" text-anchor="middle" font-size="11" fill="#888">电子不能穿过中间的绝缘层，只能在极板上积累</text>
+
+  <!-- ============ 电路符号 ============ -->
+  <text x="410" y="230" text-anchor="middle" font-size="14" font-weight="bold" fill="#555">电路符号</text>
+
+  <line x1="375" y1="250" x2="445" y2="250" stroke="#333" stroke-width="3" />
+  <line x1="375" y1="270" x2="445" y2="270" stroke="#333" stroke-width="3" />
+  <line x1="355" y1="250" x2="340" y2="240" stroke="#333" stroke-width="2" />
+  <line x1="465" y1="270" x2="480" y2="280" stroke="#333" stroke-width="2" />
+  <text x="330" y="235" font-size="11" fill="#888">+5V</text>
+  <text x="490" y="285" font-size="11" fill="#888">GND</text>
+
+  <!-- ============ 下半部分：充放电回路 ============ -->
+  <line x1="30" y1="310" x2="780" y2="310" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- ========== 充电回路 ========== -->
+  <text x="215" y="335" text-anchor="middle" font-size="14" font-weight="bold" fill="#e53935">充电回路</text>
+
+  <!-- 充电电容 -->
+  <line x1="130" y1="360" x2="220" y2="360" stroke="#333" stroke-width="3" />
+  <line x1="130" y1="385" x2="220" y2="385" stroke="#333" stroke-width="3" />
+  <text x="175" y="400" text-anchor="middle" font-size="11" fill="#333">C</text>
+
+  <!-- 电容上端 +5V -->
+  <line x1="175" y1="360" x2="175" y2="345" stroke="#e53935" stroke-width="2" />
+  <line x1="175" y1="345" x2="60" y2="345" stroke="#e53935" stroke-width="2" />
+  <line x1="60" y1="345" x2="60" y2="420" stroke="#e53935" stroke-width="2" />
+  <text x="50" y="440" font-size="11" fill="#e53935">+5V</text>
+
+  <!-- 电阻 R -->
+  <rect x="55" y="420" width="50" height="16" fill="#f5f5f5" stroke="#999" stroke-width="1.5" rx="3" />
+  <text x="80" y="432" text-anchor="middle" font-size="10" fill="#666">R</text>
+
+  <!-- 电阻下端接电容下端 -->
+  <line x1="80" y1="436" x2="80" y2="480" stroke="#e53935" stroke-width="2" />
+  <line x1="80" y1="480" x2="175" y2="480" stroke="#e53935" stroke-width="2" />
+
+  <!-- 充电电流箭头 -->
+  <polygon points="170,475 175,480 170,485" fill="#e53935" />
+  <text x="115" y="470" text-anchor="middle" font-size="11" fill="#e53935">充电电流</text>
+
+  <!-- 电容下端到GND -->
+  <line x1="175" y1="385" x2="175" y2="480" stroke="#e53935" stroke-width="2" />
+
+  <!-- 电荷积累标注 -->
+  <text x="240" y="368" font-size="10" fill="#e53935">电荷慢慢积累</text>
+  <text x="240" y="382" font-size="10" fill="#e53935">👇</text>
+
+  <!-- ========== 放电回路 ========== -->
+  <text x="610" y="335" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">放电回路</text>
+
+  <!-- 放电电容 -->
+  <line x1="530" y1="360" x2="620" y2="360" stroke="#333" stroke-width="3" />
+  <line x1="530" y1="385" x2="620" y2="385" stroke="#333" stroke-width="3" />
+  <text x="575" y="400" text-anchor="middle" font-size="11" fill="#333">C</text>
+
+  <!-- 电容上端接负载 -->
+  <line x1="575" y1="360" x2="575" y2="345" stroke="#1565c0" stroke-width="2" />
+  <line x1="575" y1="345" x2="680" y2="345" stroke="#1565c0" stroke-width="2" />
+  <line x1="680" y1="345" x2="680" y2="420" stroke="#1565c0" stroke-width="2" />
+
+  <!-- 负载 -->
+  <rect x="655" y="420" width="50" height="16" fill="#f5f5f5" stroke="#999" stroke-width="1.5" rx="3" />
+  <text x="680" y="432" text-anchor="middle" font-size="10" fill="#666">负载</text>
+
+  <!-- 负载下端接电容下端 -->
+  <line x1="680" y1="436" x2="680" y2="480" stroke="#1565c0" stroke-width="2" />
+  <line x1="680" y1="480" x2="575" y2="480" stroke="#1565c0" stroke-width="2" />
+
+  <!-- 放电电流箭头 -->
+  <polygon points="580,475 575,480 580,485" fill="#1565c0" />
+  <text x="625" y="470" text-anchor="middle" font-size="11" fill="#1565c0">放电电流</text>
+
+  <!-- 电容下端到地 -->
+  <line x1="575" y1="385" x2="575" y2="480" stroke="#1565c0" stroke-width="2" />
+
+  <!-- 电荷释放标注 -->
+  <text x="635" y="368" font-size="10" fill="#1565c0">👉 电荷释放</text>
+
+  <!-- ============ 底部对比说明 ============ -->
+  <line x1="30" y1="505" x2="780" y2="505" stroke="#e0e0e0" stroke-width="1" />
+
+  <text x="410" y="525" text-anchor="middle" font-size="12" fill="#888">充电：电荷在极板上积累，两端电压逐渐升高  放电：电荷通过负载释放，两端电压逐渐降低</text>
+</svg>
