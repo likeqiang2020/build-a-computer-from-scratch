@@ -39,8 +39,17 @@ build-a-computer-from-scratch/
     <td><a href="02-adder-principle/3-three-bit-adder.md">3-three-bit-adder.md</a></td>
   </tr>
   <tr>
-    <td><b>💾 03-memory</b><br>存储单元</td>
+    <td rowspan="4"><b>💾 03-memory</b><br>存储单元</td>
     <td><a href="03-memory/1-sr-latch.md">1-sr-latch.md</a></td>
+  </tr>
+  <tr>
+    <td><a href="03-memory/2-d-latch.md">2-d-latch.md</a></td>
+  </tr>
+  <tr>
+    <td><a href="03-memory/3-capacitor.md">3-capacitor.md</a></td>
+  </tr>
+  <tr>
+    <td><a href="03-memory/4-d-flip-flop.md">4-d-flip-flop.md</a></td>
   </tr>
 </table>
 
@@ -51,6 +60,7 @@ build-a-computer-from-scratch/
 - B 站课程：[从零搭建计算机保姆级教程](https://www.bilibili.com/video/BV1QLT8zuE8F/)
 - 参考书籍：《编码：隐匿在计算机软硬件背后的语言》—— 非常有必要读一下
 - 模拟器：Logisim（文章的 PNG 电路结构图都是用这个画的）
+- 前期上传实物面包片的图片占了很多空间，后面考虑优先使用Tinkercad画图
 - 74LS系列芯片手册：https://www.futurlec.com/IC74LS00Series.shtml
 - 也可以使用纯软件模拟：[一个8位二进制CPU的设计和实现](https://www.bilibili.com/video/BV1aP4y1s7Vf/?)
 ---
