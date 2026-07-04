@@ -39,7 +39,7 @@ build-a-computer-from-scratch/
     <td><a href="02-adder-principle/3-three-bit-adder.md">3-three-bit-adder.md</a></td>
   </tr>
   <tr>
-    <td rowspan="4"><b>💾 03-memory</b><br>存储单元</td>
+    <td rowspan="5"><b>💾 03-memory</b><br>存储单元</td>
     <td><a href="03-memory/1-sr-latch.md">1-sr-latch.md</a></td>
   </tr>
   <tr>
@@ -50,6 +50,9 @@ build-a-computer-from-scratch/
   </tr>
   <tr>
     <td><a href="03-memory/4-d-flip-flop.md">4-d-flip-flop.md</a></td>
+  </tr>
+  <tr>
+    <td><a href="03-memory/5-accumulator.md">5-accumulator.md</a></td>
   </tr>
 </table>
 
