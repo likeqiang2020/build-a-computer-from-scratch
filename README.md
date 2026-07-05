@@ -14,7 +14,8 @@ build-a-computer-from-scratch/
 ├── 74-series/                  ← 🔩 74LS 芯片简化图
 ├── 01-logic-gates/             ← ⚡ 半导体 → 逻辑门
 ├── 02-adder-principle/         ← 🧮 加法器原理
-└── 03-memory/                  ← 💾 存储单元
+├── 03-memory/                  ← 💾 存储单元
+└── 04-clock/                   ← ⏰ 时钟原理
 ```
 
 ### 章节速览
@@ -53,6 +54,10 @@ build-a-computer-from-scratch/
   </tr>
   <tr>
     <td><a href="03-memory/5-accumulator.md">5-accumulator.md</a></td>
+  </tr>
+  <tr>
+    <td rowspan="1"><b>⏰ 04-clock</b><br>时钟原理</td>
+    <td><a href="04-clock/555timer.md">555timer.md</a></td>
   </tr>
 </table>
 
