@@ -4,9 +4,9 @@
 
 之前用面包板搭全加器和触发器，器件太多太乱。原理搞懂之后，直接用现成的芯片：**74LS283**（4 位加法器）和 **74LS74**（双 D 触发器）。
 
-![74LS283 4位加法器](../images/03-memory/03-accumulator-74ls283.png)
+![74LS283 4位加法器](../74-series/74LS283-4-bit-adder.png)
 
-![74LS74 双D触发器](../images/03-memory/03-accumulator-74ls74.png)
+![74LS74 双D触发器](../74-series/74LS74-dual-d-flip-flop.png)
 
 > 74LS74 的 CLR 是清零（Clear），PRE 是预置 1（Preset）。它们都是**低电平有效**——接 0 才触发，接 1 表示不用。正常工作时 PRE 必须一直接 VCC。
 
