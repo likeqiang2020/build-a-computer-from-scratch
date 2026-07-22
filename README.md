@@ -16,7 +16,8 @@ build-a-computer-from-scratch/
 ├── 02-adder-principle/         ← 🧮 加法器原理
 ├── 03-memory/                  ← 💾 存储单元
 ├── 04-clock/                   ← ⏰ 时钟原理
-└── 05-bus/                    ← 🚌 总线
+├── 05-bus/                    ← 🚌 总线
+└── 06-register/               ← 📝 寄存器
 ```
 
 ### 章节速览
@@ -63,6 +64,10 @@ build-a-computer-from-scratch/
   <tr>
     <td rowspan="1"><b>🚌 05-总线</b><br>总线</td>
     <td><a href="05-bus/1-bus.md">1-bus.md</a></td>
+  </tr>
+  <tr>
+    <td rowspan="1"><b>📝 06-register</b><br>寄存器</td>
+    <td><a href="06-register/1-register.md">1-register.md</a></td>
   </tr>
 </table>
 
