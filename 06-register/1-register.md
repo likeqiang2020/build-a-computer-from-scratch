@@ -54,7 +54,7 @@ Enable 和输出 Q 接入一个**三态门**，用 Enable 控制 Q 是否输出�
 
 引脚图：
 
-![74LS173 引脚图](../images/06-register/74ls173-pinout.png)
+![74LS173 引脚图](../74-series/74LS173-4-bit-register.png)
 
 内部结构图：
 
@@ -77,10 +77,10 @@ Enable 和输出 Q 接入一个**三态门**，用 Enable 控制 Q 是否输出�
 
 将 DIP 拨为 1001，4 位寄存器的 CLK 接 SR 的 Q，4 个输入接总线，4 个输出接 LED 再接 GND，Enable 和 Load 都接 GND（允许读写）。刚上电时，总线 LED 同步显示 1001，寄存器输出为随机值：
 
-![上电初始状态 总线 1001 寄存器随机](../images/06-register/register-before-clock.png)
+![上电初始状态 总线 1001 寄存器随机](../images/06-register/register-before-clock.jpg)
 
-按下 SR Latch 的 R、S 键，模拟 1 个时钟信号，寄存器同步将总线值读取并输出，LED 变为 1001：
+现在按下 SR Latch 的 R、S 键，模拟 1 个时钟信号，寄存器同步将总线值读取并输出，LED 变为 1001：
 
-![时钟触发后 寄存器输出 1001](../images/06-register/register-after-clock.png)
+![时钟触发后 寄存器输出 1001](../images/06-register/register-after-clock.jpg)
 
 > 总线是 8 位的，但本次只用了 4 位，接下来将扩展寄存器和总线到 8 位。
