@@ -17,7 +17,8 @@ build-a-computer-from-scratch/
 ├── 03-memory/                  ← 💾 存储单元
 ├── 04-clock/                   ← ⏰ 时钟原理
 ├── 05-bus/                    ← 🚌 总线
-└── 06-register/               ← 📝 寄存器
+├── 06-register/               ← 📝 寄存器
+└── 07-alu/                    ← 🔢 运算器
 ```
 
 ### 章节速览
@@ -69,18 +70,34 @@ build-a-computer-from-scratch/
     <td rowspan="1"><b>📝 06-register</b><br>寄存器</td>
     <td><a href="06-register/1-register.md">1-register.md</a></td>
   </tr>
+  <tr>
+    <td rowspan="2"><b>🔢 07-alu</b><br>运算器</td>
+    <td><a href="07-alu/1-binary-subtraction.md">1-binary-subtraction.md</a></td>
+  </tr>
+  <tr>
+    <td><a href="07-alu/2-alu.md">2-alu.md</a></td>
+  </tr>
 </table>
 
 ---
 
 ## 🔗 参考资源
 
-- B 站课程：[从零搭建计算机保姆级教程](https://www.bilibili.com/video/BV1QLT8zuE8F/)
-- 参考书籍：《编码：隐匿在计算机软硬件背后的语言》—— 非常有必要读一下
-- 模拟器：Logisim（文章的 PNG 电路结构图都是用这个画的）
-- 前期上传实物面包片的图片占了很多空间，后面考虑优先使用Tinkercad画图
-- 74LS系列芯片手册：https://www.futurlec.com/IC74LS00Series.shtml
-- 也可以使用纯软件模拟：[一个8位二进制CPU的设计和实现](https://www.bilibili.com/video/BV1aP4y1s7Vf/?)
----
+### B 站课程
+- [从零搭建计算机保姆级教程](https://www.bilibili.com/video/BV1QLT8zuE8F/)
+- [一个8位二进制CPU的设计和实现](https://www.bilibili.com/video/BV1aP4y1s7Vf/?)
+
+### 参考书籍
+- 《编码：隐匿在计算机软硬件背后的语言》
+
+### 软件工具
+- Logisim / Logisim-evolution
+- Tinkercad
+- **Digital**（从 ALU 章节开始使用，仿真效果更好）
+
+### 74LS 系列芯片资料
+- [74LS00 系列手册](https://www.futurlec.com/IC74LS00Series.shtml)
+- [74LS245 数据手册](https://www.alldatasheet.com/datasheet-pdf/view/12640/ONSEMI/74LS245.html)
+
 
 *笔记持续更新中…… 🚀*
