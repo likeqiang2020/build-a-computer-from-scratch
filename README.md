@@ -1,7 +1,6 @@
 # 🖥️ 从零搭建计算机 — 学习笔记
 
-> 跟 B 站《从零搭建计算机保姆级教程》走，记录从**逻辑门**到**可运行 CPU** 的完整过程。
-> 笔记跟着视频节奏来，记一些概念和实际操作。
+> 记录从**逻辑门**到**可运行 CPU** 的完整过程。
 
 ---
 
@@ -18,7 +17,8 @@ build-a-computer-from-scratch/
 ├── 04-clock/                   ← ⏰ 时钟原理
 ├── 05-bus/                    ← 🚌 总线
 ├── 06-register/               ← 📝 寄存器
-└── 07-alu/                    ← 🔢 运算器
+├── 07-alu/                    ← 🔢 运算器
+└── 08-programming/            ← 💻 编程的本质
 ```
 
 ### 章节速览
@@ -76,6 +76,10 @@ build-a-computer-from-scratch/
   </tr>
   <tr>
     <td><a href="07-alu/2-alu.md">2-alu.md</a></td>
+  </tr>
+  <tr>
+    <td rowspan="1"><b>💻 08-programming</b><br>编程的本质</td>
+    <td><a href="08-programming/1-programming.md">1-programming.md</a></td>
   </tr>
 </table>
 
